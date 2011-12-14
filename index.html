@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BRUG - Bandhagen Ruby User Group</title>
+    <link href="favicon.ico" rel="shortcut icon"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/content.css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-940629-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <img src="images/ruby.png" alt="Ruby" title="Ruby" />
+      <h1>Bandhagen Ruby User Group</h2>
+      <h2>Next hack along: <span id="next_date">2011-12-14</span></h2>
+      <p id="note">
+        Code, Design & Beer!
+      </p>
+      <div style="position: absolute; top: 5em; text-align: right; width:70%;"><a href="http://c7.se"><img src="images/code7_icon.png" /></a></div>
+
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'search',
+        search: '#BandhagenRuby OR #BRUGse',
+        interval: 6000,
+        title: '',
+        subject: '',
+        width: 800,
+        height: 190,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#a61d0e'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#696765',
+            links: '#A61E0E'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: true,
+          hashtags: true,
+          timestamp: true,
+          avatars: true,
+          behavior: 'all'
+        }
+      }).render().start();
+      </script>
+    </div>
+    <script type="text/javascript">
+      var next_date_element = document.getElementById("next_date");
+      date = next_date_element.innerHTML.split('-');
+      if(new Date(date[0]+"/"+date[1]+"/"+(parseInt(date[2])+1)) < new Date()) {
+        next_date_element.innerHTML = '<span style="color: #cecece;">nil</span>';
+        document.getElementById("note").innerHTML = '';
+      }
+    </script>
+  </body>
+</html>

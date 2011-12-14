@@ -1,0 +1,45 @@
+/**
+ * ChunkFive is copyrighted by the vendor listed below.
+ *
+ * @vendor:     The League of Moveable Type
+ * @vendorurl:  http://www.theleagueofmoveabletype.com
+ * @licenseurl: http://www.fontsquirrel.com/license/ChunkFive
+ */
+
+@font-face {
+	font-family: 'ChunkFive';
+	src: url('../fonts/Chunkfive.eot');
+	src: local('ChunkFive'), local('ChunkFive'), url('../fonts/Chunkfive.woff') format('woff'), url('../fonts/Chunkfive.svg#ChunkFive') format('svg'), url('../fonts/Chunkfive.otf') format('opentype');
+}
+
+h1 {
+  font: 80px/85px 'ChunkFive', Helvetica, sans-serif; 
+  margin-bottom: 0.1em; 
+  margin-top: 0.2em;
+  color: #A61E0E; 
+}
+
+h2 {font: 38px/45px 'ChunkFive', Helvetica, sans-serif; margin-top: 0.2em; color: #696765; }
+h3 {font: 24px/30px 'ChunkFive', Helvetica, sans-serif; margin-top: 0.2em; color: #696765; }
+a { color: #A61E0E; }
+p { 
+  font: 20px/1.5 "Palatino",Georgia,"Times New Roman",Times,serif; 
+  color: #696765;
+}
+
+div.twtr-tweet-text p {
+  font-size: 16px;
+}
+
+div.twtr-widget .twtr-tweet-wrap {
+  padding: 6px 0;
+}
+
+#container {
+  margin-top: 4em;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img { border: 0; }
